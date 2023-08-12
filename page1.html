@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>page1</title>
+    <style>
+    	*{
+    		box-sizing: border-box;
+    		font-family: arial;
+    		margin-right: 0px;
+    		margin-left:0px;
+    	}
+    	h1{
+    		margin-bottom:41px;
+
+    	}
+    	p{
+    		border-style:solid;
+    		border-color:1px black;
+    		width: 90%;
+    		margin-right:auto;
+    		margin-left:auto;
+    		height:150px;
+    		background-color:blue;
+    	}
+    	.row{
+    		width:100%;
+    	}
+    	@media (min-width:992px){
+    	.col-4-lg{
+    		float: left;
+    		border-style: solid;
+    		border-color: green;
+    	}
+    	
+    	.col-4-lg{
+    		width: 33.33%;
+    	}
+    }
+    @media (min-width:768px) and (max-width:991px){
+    	.col-6-md, .col-12-md{
+    		float: left;
+    		border-style: solid;
+    		border-color: green;
+    	}
+
+    	.col-6-md{
+    		width: 50%;
+    	}
+    	.col-12-md{
+    		width:100%;
+    	}
+    }
+   </style>
+
+</head>
+<body>
+	<h1>Our minu</h1>
+	<div class = "row">
+		<div class = "col-4-lg col-6-md">Item1</div>
+		<div class = "col-4-lg col-6-md">Item2</div>
+		<div class = "col-4-lg col-12-md">Item3</div>
+	</div>
+
+
+</body>
+</html>
